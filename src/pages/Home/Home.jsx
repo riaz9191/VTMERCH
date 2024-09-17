@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import HomePage from "./HomePage";
 import FeaturedProducts from "./FeaturedProducts";
-
+import SignedCollection from "./SignedCollection ";
 
 
 const Home = () => {
@@ -13,7 +13,8 @@ const Home = () => {
     <div>
       <HomePage/>
       <FeaturedProducts/>
-     
+      <SignedCollection/>
+      
     </div>
   );
 };
