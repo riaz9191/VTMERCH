@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import Container from "../Container";
-import logoImg from "../../../assets/Logo-20240916T124732Z-001/Logo/Valuetainment.svg";
+import logoImg from "../../../assets/Logo/Valuetainment.svg";
 import MenuDropdown from "./MenuDropdown";
 
 const Navbar = () => {
