@@ -8,6 +8,12 @@ import FeaturedProducts from "./FeaturedProducts";
 import SignedCollection from "./SignedCollection ";
 import MissionSection from "./MissionSection";
 import ShopCollection from "./ShopCollection";
+import NewArrival from "./NewArrival";
+import FutureSection from "./FutureSection";
+import WhatWeBelieve from "./WhatWeBelieve";
+import ProductOfTheMonth from "./ProductOfTheMonth";
+
+
 
 const Home = () => {
   return (
@@ -17,7 +23,10 @@ const Home = () => {
       <SignedCollection/>
       <MissionSection/>
       <ShopCollection/>
-      
+      <NewArrival/>
+      <FutureSection/>
+      <WhatWeBelieve/>
+      <ProductOfTheMonth/>
     </div>
   );
 };
