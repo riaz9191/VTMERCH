@@ -6,7 +6,8 @@ import { Pagination } from "swiper/modules";
 import HomePage from "./HomePage";
 import FeaturedProducts from "./FeaturedProducts";
 import SignedCollection from "./SignedCollection ";
-
+import MissionSection from "./MissionSection";
+import ShopCollection from "./ShopCollection";
 
 const Home = () => {
   return (
@@ -14,6 +15,8 @@ const Home = () => {
       <HomePage/>
       <FeaturedProducts/>
       <SignedCollection/>
+      <MissionSection/>
+      <ShopCollection/>
       
     </div>
   );
