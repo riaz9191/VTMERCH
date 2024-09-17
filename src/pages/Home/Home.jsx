@@ -12,6 +12,7 @@ import NewArrival from "./NewArrival";
 import FutureSection from "./FutureSection";
 import WhatWeBelieve from "./WhatWeBelieve";
 import ProductOfTheMonth from "./ProductOfTheMonth";
+import ServicesSection from "./ServicesSection";
 
 
 
@@ -27,6 +28,7 @@ const Home = () => {
       <FutureSection/>
       <WhatWeBelieve/>
       <ProductOfTheMonth/>
+      <ServicesSection/>
     </div>
   );
 };

@@ -10,34 +10,28 @@ import {
 } from "react-icons/fa";
 
 const ProductOfTheMonth = () => {
-  // State for the main image and quantity
   const [mainImage, setMainImage] = useState(img1);
   const [quantity, setQuantity] = useState(1);
 
-  // Function to handle image change
   const handleImageClick = (img) => {
     setMainImage(img);
   };
 
-  // Function to handle quantity change
   const handleQuantityChange = (change) => {
     setQuantity((prev) => {
       const newQuantity = prev + change;
-      return newQuantity < 1 ? 1 : newQuantity; // Ensure quantity is not less than 1
+      return newQuantity < 1 ? 1 : newQuantity;
     });
   };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      {/* Product of the month title */}
       <h1 className="text-4xl font-bold text-center mb-8">
         PRODUCT OF <span className="text-gray-400">THE MONTH</span>
       </h1>
 
       <div className="flex flex-col lg:flex-row items-center">
-        {/* Product Image and Carousel */}
         <div className="lg:w-1/2 flex items-start">
-          {/* Left side image thumbnails */}
           <div className="flex flex-col items-center mr-4">
             <img
               src={img1}
@@ -75,7 +69,6 @@ const ProductOfTheMonth = () => {
           </div>
         </div>
 
-        {/* Product Details */}
         <div className="lg:w-1/2 lg:ml-8 mt-8 lg:mt-0">
           <h2 className="text-2xl font-bold mb-4">
             Premium Valuetainment Leather Backpack
@@ -86,12 +79,10 @@ const ProductOfTheMonth = () => {
             zippers and luxurious lining, no detail has been overlooked.
           </p>
 
-          {/* Price */}
           <div className="text-2xl font-bold text-red-600 mb-4">
             <span className="text-black">Price:</span> $199.95
           </div>
 
-          {/* Size options */}
           <div className="mb-4">
             <span className="font-bold">Size:</span>
             <div className="flex space-x-2 mt-2">
@@ -106,7 +97,6 @@ const ProductOfTheMonth = () => {
             </div>
           </div>
 
-          {/* Quantity selector */}
           <div className="mb-6">
             <span className="font-bold">Quantity:</span>
             <div className="flex items-center mt-2">
@@ -131,7 +121,6 @@ const ProductOfTheMonth = () => {
             </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex space-x-4 mb-6">
             <button className="px-16 py-3 bg-white text-black border border-gray-900 hover:bg-black hover:text-white rounded-md ">
               ADD TO CART
@@ -141,7 +130,6 @@ const ProductOfTheMonth = () => {
             </button>
           </div>
 
-          {/* Social share links in black */}
           <div className="flex space-x-4 mb-6 text-black">
             <span className="font-bold">Share:</span>
             <a href="#" className="hover:text-gray-600">

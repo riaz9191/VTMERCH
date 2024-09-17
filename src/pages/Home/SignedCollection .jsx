@@ -7,7 +7,6 @@ import book2 from "../../assets/img/img (8).png";
 const SignedCollection = () => {
   return (
     <section className="bg-black relative py-20">
-      {/* Text and Book Section */}
       <div className="container mx-auto flex flex-col items-center justify-center  lg:flex-row lg:justify-between">
         <div className="lg:w-1/2 px-4 flex flex-col justify-center">
           <div className="lg:ps-20">

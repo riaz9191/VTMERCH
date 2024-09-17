@@ -10,8 +10,6 @@ const MissionSection = () => {
           AND EMPOWER CURRENT AND FUTURE LEADERS AROUND THE WORLD.
         </h2>
       </div>
-
-      {/* Overlapping Image */}
       <div className="absolute bottom-0 transform right-32 hidden lg:block">
         <img
           src={man}
