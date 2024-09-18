@@ -3,8 +3,8 @@ import { FaShippingFast, FaUndoAlt, FaHeadset, FaMoneyBillAlt } from 'react-icon
 
 const ServicesSection = () => {
   return (
-    <div className="bg-gradient-to-r from-[#EC3339] to-[#BB1117%] py-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
+    <div className="bg-gradient-to-r from-[#EC3339] to-[#BB1117] py-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 text-white text-center">
         <div>
           <FaShippingFast size={40} className="mx-auto mb-4 " />
           <h3 className="text-xl font-bold mb-2">Shipping</h3>
