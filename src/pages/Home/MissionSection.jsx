@@ -3,18 +3,20 @@ import man from "../../assets/img/img (5).png";
 
 const MissionSection = () => {
   return (
-    <section className="relative bg-red-600 text-white py-28 ps-20">
-      <div className="px-4 lg:w-7/12 ">
-        <h2 className="text-2xl lg:text-3xl font-bold mb-4 font-montserrat">
+    <section className="relative bg-red-600 text-white py-14 sm:py-20 lg:py-28 px-4 lg:ps-20">
+      <div className="lg:w-7/12">
+        <h2 className="text-lg sm:text-xl lg:text-3xl font-bold mb-4 font-montserrat leading-tight">
           OUR MISSION IS TO ENLIGHTEN, ENTERTAIN, <br />
           AND EMPOWER CURRENT AND FUTURE LEADERS AROUND THE WORLD.
         </h2>
       </div>
-      <div className="absolute bottom-0 transform right-44 hidden lg:block">
+
+      {/* Image on larger screens */}
+      <div className="absolute bottom-0 right-0 lg:right-44 hidden lg:block">
         <img
           src={man}
           alt="Mission"
-          className="h-[450px] object-cover"
+          className="h-64 sm:h-80 lg:h-[450px] object-cover"
         />
       </div>
     </section>
@@ -22,4 +24,3 @@ const MissionSection = () => {
 };
 
 export default MissionSection;
- 

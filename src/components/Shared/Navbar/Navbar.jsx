@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import Container from "../Container";
-import logoImg from "../../../assets/Logo/Valuetainment.svg";
+import logoImg from "../../../assets/Logo/logo_white.png";
 import MenuDropdown from "./MenuDropdown";
 
 const Navbar = () => {
@@ -27,15 +27,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className=" w-full text-white bg-[#EA2127] z-10">
-      <div className="py-3">
+    <div className=" w-full text-white bg-[#EA2127] z-10 px-5 lg:p-0">
+      <div className="py-3 ">
         <Container>
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
             {/* Logo */}
             <Link to="/">
-              <div className="flex justify-center items-center gap-2">
-                <img className=" md:block w-12 text-white" src={logoImg} alt="logo" />
-                <p className="text-6xl">VTMERCH</p>
+              <div className="flex justify-center items-center">
+                <img className=" md:block w-16  text-white" src={logoImg} alt="logo" />
+                <p className="text-5xl lg:text-6xl font-montserrat font-">VTMERCH</p>
               </div>
             </Link>
             {/* <ul className="lg:flex gap-5 font-   hidden ">

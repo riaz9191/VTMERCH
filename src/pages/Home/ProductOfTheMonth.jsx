@@ -26,7 +26,7 @@ const ProductOfTheMonth = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      <h1 className="text-4xl font-bold text-center mb-8 font-montserrat">
+      <h1 className="text-4xl lg:text-5xl font-bold text-center mb-8 font-montserrat">
         PRODUCT OF <span className="text-gray-400 text-outline">THE MONTH</span>
       </h1>
 
@@ -122,14 +122,13 @@ const ProductOfTheMonth = () => {
           </div>
 
           <div className="flex space-x-4 mb-6">
-            <button className="px-16 py-3 bg-white text-black border border-gray-900 hover:bg-black hover:text-white rounded-md ">
+            <button className="lg:px-16 p-4 py-3 bg-white text-black border border-gray-900 hover:bg-black hover:text-white rounded-md ">
               ADD TO CART
             </button>
-            <button className="px-16 py-3 bg-black text-white rounded-md hover:bg-gray-800">
+            <button className="lg:px-16 p-4 py-3 bg-black text-white rounded-md hover:bg-gray-800">
               BUY IT NOW
             </button>
           </div>
-
           <div className="flex space-x-4 mb-6 text-black">
             <span className="font-bold">Share:</span>
             <a href="#" className="hover:text-gray-600">

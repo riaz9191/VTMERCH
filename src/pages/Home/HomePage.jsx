@@ -45,14 +45,14 @@ const products = [
 
 const HomePage = () => {
   return (
-    <div className="bg-[#EA2127] pt-36 pb-32">
-      <h2 className="text-white lg:ps-20 font-bold mb-8 px-4 lg:px-0 text-4xl lg:text-8xl font-actOfRejection uppercase opacity-50">
+    <div className="bg-[#EA2127] pt-10 lg:pt-24 pb-20 sm:pt-36 sm:pb-32">
+      <h2 className="text-white sm:ps-20 font-bold mb-8 px-4 sm:px-0 text-2xl sm:text-4xl lg:text-6xl xl:text-8xl font-actOfRejection uppercase opacity-50 ">
         Future Looks Bright!
       </h2>
-      <div className="lg:-mt-16 ps-32">
+      <div className="sm:-mt-16 sm:ps-32">
         <Swiper
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={20}
           centeredSlides={false}
           pagination={{ clickable: true }}
           breakpoints={{
@@ -65,6 +65,10 @@ const HomePage = () => {
               spaceBetween: 30,
             },
             1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
               slidesPerView: 4,
               spaceBetween: 40,
             },
@@ -74,17 +78,22 @@ const HomePage = () => {
         >
           {products.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded text-white">
+              <div className="rounded text-white ">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-60 object-cover"
+                  className="w-full h-40 sm:h-60 object-contain lg:object-cover"
                 />
-                <p className="mt-4">{product.name}</p>
-                <div className="flex flex-row gap-3 items-center mt-2">
-                  {" "}
-                  <p className=" text-lg font-semibold mt-">{product.price}</p>
-                  <p className="line-through ">{product.oldPrice}</p>
+                <p className="mt-4 text-sm sm:text-base lg:text-lg text-center lg:text-left">
+                  {product.name}
+                </p>
+                <div className="flex flex-row gap-3 items-center mt-2 justify-center lg:justify-start">
+                  <p className="text-sm sm:text-lg font-semibold">
+                    {product.price}
+                  </p>
+                  <p className="line-through text-xs sm:text-sm">
+                    {product.oldPrice}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

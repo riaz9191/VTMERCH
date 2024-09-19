@@ -17,9 +17,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white py-10 fontmon">
+    <footer className="bg-black text-white py-10">
       <div className="mb-6 max-w-6xl mx-auto">
-        <div className="flex items-center gap-2 ">
+        <div className="flex items-center gap-2 justify-center lg:justify-start ">
           <img
             className="filter sepia-100 saturate-150 hue-rotate-15 md:block w-14"
             src={logoImg}

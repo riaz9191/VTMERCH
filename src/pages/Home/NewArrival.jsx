@@ -40,7 +40,7 @@ const NewArrival = () => {
   return (
     <div className="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto  mb-8">
-        <h2 className="text-3xl lg:text-5xl font-bold mb-2 font-montserrat">NEW ARRIVAL</h2>
+        <h2 className="text-3xl lg:text-5xl font-bold mb-2 font-montserrat text-center">NEW ARRIVAL</h2>
         
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
