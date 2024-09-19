@@ -55,7 +55,7 @@ const WhatWeBelieve = () => {
 
                 <div>
                   <p className="text-gray-300">
-                    <span className="text-2xl font-bold">Debate</span> is
+                  <span className="text-2xl font-bold">Debate</span> is
                     welcome and necessary as it can lead to consensus,
                     epiphanies, and expose the truth. When a clash of ideas,
                     often emotionally charged, evolves into civil debate and
