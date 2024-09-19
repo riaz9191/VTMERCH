@@ -45,8 +45,8 @@ const products = [
 
 const HomePage = () => {
   return (
-    <div className="bg-[#EA2127] pt-10 lg:pt-24 pb-20 sm:pt-36 sm:pb-32">
-      <h2 className="text-white sm:ps-20 font-bold mb-8 px-4 sm:px-0 text-2xl sm:text-4xl lg:text-6xl xl:text-8xl font-actOfRejection uppercase opacity-50 ">
+    <div className="bg-[#EA2127] pt-10 lg:pt-24 pb-12 sm:pt-36 sm:pb-32">
+      <h2 className="text-white sm:ps-20 font-bold mb-8 px-4 sm:px-0 text-center lg:text-start text-4xl sm:text-4xl lg:text-6xl xl:text-8xl font-actOfRejection uppercase lg:opacity-50 ">
         Future Looks Bright!
       </h2>
       <div className="sm:-mt-16 sm:ps-32">
@@ -74,7 +74,7 @@ const HomePage = () => {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="mySwiper customSwiper"
         >
           {products.map((product, index) => (
             <SwiperSlide key={index}>
@@ -84,7 +84,7 @@ const HomePage = () => {
                   alt={product.name}
                   className="w-full h-40 sm:h-60 object-contain lg:object-cover"
                 />
-                <p className="mt-4 text-sm sm:text-base lg:text-lg text-center lg:text-left">
+                <p className="mt-6 text-sm sm:text-base lg:text-lg text-center lg:text-left">
                   {product.name}
                 </p>
                 <div className="flex flex-row gap-3 items-center mt-2 justify-center lg:justify-start">

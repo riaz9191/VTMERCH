@@ -39,11 +39,11 @@ const products = [
 const FeaturedProducts = () => {
   return (
     <div className="bg-gray-50 py-8 sm:py-12 md:py-16 px-4 sm:px-8 lg:px-16">
-      <div className="max-w-7xl mx-auto mb-8 ">
-        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold mb-2 font-montserrat">
+      <div className="mb-8 ">
+        <h2 className="text-3xl sm:text-3xl lg:text-5xl font-extrabold mb-2 font-montserrat text-center lg:text-start">
           BUY 1 GET 1 FREE
         </h2>
-        <p className="text-lg sm:text-xl lg:text-3xl font-bold font-montserrat">
+        <p className="text-xl sm:text-xl lg:text-5xl font-bold font-montserrat text-center lg:text-start">
           ON{' '}
           <span className="font-inter text-outline">BEST SELLING PRODUCTS</span>
         </p>

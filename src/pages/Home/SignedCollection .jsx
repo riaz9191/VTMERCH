@@ -39,7 +39,7 @@ const SignedCollection = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-white text-black py-2 px-6 rounded mt-4 font-black"
+              className="bg-white text-black uppercase font-semibold py-2 px-6 rounded mt-4"
             >
               Shop Now &#10095;
             </motion.button>

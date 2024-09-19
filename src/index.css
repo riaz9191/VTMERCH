@@ -50,3 +50,14 @@
   color: transparent;                  
   text-transform: uppercase;           
 }
+
+
+
+.customSwiper .swiper-pagination {
+  margin-bottom :35px !important;
+}
+
+.customSwiper .swiper-pagination-bullet {
+  background: rgb(255, 255, 255); 
+  /* margin-top : 5px !important; */
+}
