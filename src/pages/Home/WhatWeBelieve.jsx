@@ -51,7 +51,7 @@ const WhatWeBelieve = () => {
                     society and the quality of life we enjoy today.
                   </p>
                 </div>
-                <hr className="border-gray-500" />
+                <hr className="border-gray-500 " />
 
                 <div>
                   <p className="text-gray-300">
