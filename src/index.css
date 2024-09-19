@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ActOfRejection";
+  src: url("/src/assets/Font/act_of_rejection/Act_Of_Rejection.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/Font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype")  ;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat_Italic";
+  src: url("/src/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/Font/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter_Italic";
+  src: url("/src/assets/Font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-outline {
+  font-weight: bold;                     /* Make it bold */
+  -webkit-text-stroke: 1px black;        /* Outline color and thickness */
+  color: transparent;                    /* Make the inside transparent */
+  text-transform: uppercase;             /* Uppercase text (optional) */
+}

@@ -47,10 +47,10 @@ const HomePage = () => {
   return (
     <div className="bg-[#EA2127] pt-36 pb-52">
       {/* Heading Section */}
-      <h2 className="text-white lg:ps-20 font-bold mb-8 px-4 lg:px-0 text-4xl lg:text-8xl">
+      <h2 className="text-white lg:ps-20 font-bold mb-8 px-4 lg:px-0 text-4xl lg:text-8xl font-actOfRejection uppercase opacity-50">
         Future Looks Bright!
       </h2>
-      <div className="lg:-mt-12">
+      <div className="lg:-mt-16">
         {/* Swiper Carousel for Product Display */}
         <Swiper
           slidesPerView={1}
