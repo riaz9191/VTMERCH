@@ -26,8 +26,8 @@ const ProductOfTheMonth = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      <h1 className="text-4xl font-bold text-center mb-8">
-        PRODUCT OF <span className="text-gray-400">THE MONTH</span>
+      <h1 className="text-4xl font-bold text-center mb-8 font-montserrat">
+        PRODUCT OF <span className="text-gray-400 text-outline">THE MONTH</span>
       </h1>
 
       <div className="flex flex-col lg:flex-row items-center">
@@ -80,7 +80,7 @@ const ProductOfTheMonth = () => {
           </p>
 
           <div className="text-2xl font-bold text-red-600 mb-4">
-            <span className="text-black">Price:</span> $199.95
+            <span className="text-black font-montserrat">Price:</span> $199.95
           </div>
 
           <div className="mb-4">

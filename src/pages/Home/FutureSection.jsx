@@ -20,18 +20,15 @@ const FutureSection = () => {
   ];
   return (
     <div>
-      <div className="min-h-screen flex items-center justify-center py-10 lg:px-20">
-        {/* Main container with two columns */}
+      <div className=" flex items-center justify-center py-10 lg:px-32">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-0">
-          {/* Left Side - Text Section */}
           <div className="text-black lg:w-1/2 text-center lg:text-left ">
-            <h1 className="text-5xl lg:text-8xl font-bold leading-tight mb-4">
+            <h1 className="text-5xl lg:text-8xl font-bold leading-tight mb-4 font-actOfRejection opacity-80 f">
               Future <br /> Looks <br /> Bright
             </h1>
-            <p className="text-5xl">PURPLE & <br /> GOLD SERIES</p>
+            <p className="text-5xl font-montserratItalic"><span className="text-[#7F1BCD] font-bold">PURPLE</span> <span className="text-outline font-montserrat">&</span><br /><span className="text-[#E0A408] font-bold">Gold</span>  <span className="text-outline font-montserrat">Series</span></p>
           </div>
 
-          {/* Right Side - Product Cards */}
           <div className="lg:w-1/2 flex flex-col lg:flex-row items-center justify-around mt-10 lg:mt-0 space-y-6 lg:space-y-0 lg:space-x-6">
             {products.map((product, index) => (
               <div
