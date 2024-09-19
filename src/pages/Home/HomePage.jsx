@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 import img1 from "../../assets/img/img (9).png";
 import img2 from "../../assets/img/img (10).png";
 import img3 from "../../assets/img/img (11).jpeg";
-import img4 from "../../assets/img/img (11).PNG";
+import img4 from "../../assets/img/img (11).png";
 import img5 from "../../assets/img/img (11).jpeg";
 
 const products = [
