@@ -6,14 +6,12 @@ import Footer from "../components/Shared/Footer/Footer";
 const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading behavior with useEffect
   useEffect(() => {
-    // Simulate a loading delay (e.g., 1.5 seconds)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1500);
 
-    return () => clearTimeout(timer); // Clean up the timeout if the component unmounts
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
