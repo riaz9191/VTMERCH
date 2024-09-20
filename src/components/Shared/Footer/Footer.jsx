@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-white py-10">
-      <div className="mb-6 max-w-7xl mx-auto">
+      <div className="mb-6 max-w-6xl lg:max-w-7xl mx-auto">
         <div className="flex items-center gap-2 justify-center lg:justify-start ">
           <img
             className="filter sepia-100 saturate-150 hue-rotate-15 md:block w-14"
@@ -26,10 +26,10 @@ const Footer = () => {
             alt="logo"
           />
 
-          <p className="text-7xl">VTMERCH</p>
+          <p className="text-5xl lg:text-7xl">VTMERCH</p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 border-t border-gray-700">
+      <div className="max-w-6xl lg:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 border-t border-gray-700">
         {/* Logo and Subscribe Section */}
         <div className="mt-4 ">
           <p className="mb-4">
@@ -155,7 +155,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className=" mt-8 pt-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+        <div className="max-w-6xl lg:max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
           <p>© {currentYear} Valuetainment Store. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <img src={visa} alt="Visa" className="w-10" />

@@ -46,8 +46,8 @@ const products = [
 const HomePage = () => {
   return (
     <div className="bg-[#EA2127] pt-10 lg:pt-24 pb-12 sm:pt-36 sm:pb-32">
-      <h2 className="text-white sm:ps-20 font-bold mb-8 px-4 sm:px-0 text-center lg:text-start text-4xl sm:text-4xl lg:text-6xl xl:text-8xl font-actOfRejection uppercase lg:opacity-50 ">
-        Future Looks Bright!
+      <h2 className="text-white sm:ps-20 font-bold mb-8 px-4 sm:px-0 text-center lg:text-start text-4xl sm:text-6xl lg:text-6xl xl:text-8xl font-actOfRejection uppercase lg:opacity-50 ">
+        Future Looks <br className="md:hidden" /> Bright!
       </h2>
       <div className="sm:-mt-16 sm:ps-32">
         <Swiper
