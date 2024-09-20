@@ -36,10 +36,26 @@ const products = [
   },
 ];
 
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, 
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 }, 
+  visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 120 } },
+};
+
 const FeaturedProducts = () => {
   return (
     <div className="bg-gray-50 py-8 sm:py-12 md:py-16 px-4 sm:px-8 lg:px-16">
-      <div className="mb-8 ">
+      <div className="mb-8">
         <h2 className="text-3xl sm:text-3xl lg:text-5xl font-extrabold mb-2 font-montserrat text-center lg:text-start">
           BUY 1 GET 1 FREE
         </h2>
@@ -48,11 +64,18 @@ const FeaturedProducts = () => {
           <span className="font-inter text-outline">BEST SELLING PRODUCTS</span>
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.3 }} 
+      >
         {products.map((product) => (
           <motion.div
             key={product.id}
             className="bg-white rounded-lg shadow-lg p-4"
+            variants={cardVariants} 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -74,7 +97,7 @@ const FeaturedProducts = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Import local images
 import bossCollection from '../../assets/img/img (3).jpeg';
 import headwear from '../../assets/img/img (7).png';
 import valueBooks from '../../assets/img/img (5).jpeg';
@@ -9,9 +8,10 @@ import accessories from '../../assets/img/img (8).jpeg';
 import futureBrightCollection from '../../assets/img/img (2).jpeg';
 import tops from '../../assets/img/img (9).jpeg';
 
-// Randomized bounce effect when images enter the viewport
+import logo from "../../assets/Logo/logo_white.png";
+
 const randomBounceEffect = (delay) => ({
-  hidden: { opacity: 0, y: 50 }, // Images start hidden, with a vertical offset
+  hidden: { opacity: 0, y: 50 }, 
   visible: {
     opacity: 1,
     y: 0,
@@ -19,14 +19,18 @@ const randomBounceEffect = (delay) => ({
       type: 'spring',
       stiffness: 300,
       damping: 20,
-      delay, // Delay for random entry effect
+      delay, 
     },
   },
 });
 
 const ShopCollection = () => {
   return (
-    <div className="bg-gradient-to-r from-[#2C2A2A] to-[#000000] text-white py-16 sm:py-24 px-4 lg:px-10">
+    <div className="relative bg-gradient-to-r from-[#2C2A2A] to-[#000000] text-white py-16 sm:py-24 px-4 lg:px-10">
+
+       {/* logo Image */}
+       <img className="absolute -top-20 -left-24 lg:w-[700px] lg:h-[800px] opacity-5" src={logo} alt="" />
+    
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-6">
         {/* Left Section*/}
         <div className="space-y-6">
@@ -65,7 +69,7 @@ const ShopCollection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={randomBounceEffect(0.2)} // Slightly more delay for this item
+            variants={randomBounceEffect(0.2)} 
             whileHover={{ scale: 1.1 }}
           >
             <img
